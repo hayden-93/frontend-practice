@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
 
 import { Zap, Clock } from "react-feather";
-
-import { Avatar } from "../Avatar/Avatar";
+import { Seperator } from "../Seperator/Seperator";
 
 interface CardProps {
   children: ReactNode;
@@ -114,6 +113,6 @@ interface CardSeperatorProps {
 }
 
 export const CardSeperator = ({ className }: CardSeperatorProps) => {
-  const classes = ["h-px my-4 text-neutral-line-dark-blue", className].join(" ").trim();
-  return <hr className={classes}></hr>;
+  const classes = ["text-neutral-line-dark-blue", className].join(" ").trim();
+  return <Seperator className={classes}></Seperator>;
 };
