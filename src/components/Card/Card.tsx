@@ -1,4 +1,7 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+
+import { Zap } from "react-feather";
+
 import { Avatar } from "../Avatar/Avatar";
 
 interface CardProps {
@@ -47,8 +50,13 @@ interface CardPriceProps {
 }
 
 export const CardPrice = ({ children, className }: CardPriceProps) => {
-  const classes = ["text-sm", className].join(" ").trim();
-  return <span className={classes}>{children}</span>;
+  const classes = ["flex text-primary-cyan items-center space-x-1", className].join(" ").trim();
+  return (
+    <div className={classes}>
+      <Zap className="fill-primary-cyan w-4 h-4" />
+      <span className="text-sm">{children}</span>
+    </div>
+  );
 };
 
 interface CardDeadlineProps {
