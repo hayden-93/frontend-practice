@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { Zap } from "react-feather";
+import { Zap, Clock } from "react-feather";
 
 import { Avatar } from "../Avatar/Avatar";
 
@@ -65,8 +65,13 @@ interface CardDeadlineProps {
 }
 
 export const CardDeadline = ({ children, className }: CardDeadlineProps) => {
-  const classes = ["text-sm", className].join(" ").trim();
-  return <span className={classes}>{children}</span>;
+  const classes = ["flex text-primary-soft-blue items-center space-x-1", className].join(" ").trim();
+  return (
+    <div className={classes}>
+      <Clock className="w-4 h-4" />
+      <span className="text-sm">{children}</span>
+    </div>
+  );
 };
 
 interface CardProfileProps {

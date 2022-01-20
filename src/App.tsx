@@ -26,10 +26,7 @@ function App() {
           <CardDescription>Our Equilibrium collection promotes balance and calm</CardDescription>
           <div className="flex justify-between py-2">
             <CardPrice>0.041 ETH</CardPrice>
-            <div className="flex text-primary-soft-blue items-center space-x-1">
-              <Clock className="w-4 h-4" />
-              <CardDeadline>3 days left</CardDeadline>
-            </div>
+            <CardDeadline>3 days left</CardDeadline>
           </div>
         </CardContent>
         <CardSeperator />
