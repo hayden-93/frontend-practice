@@ -13,14 +13,15 @@ import {
 } from "./components/Card/Card";
 import { Avatar } from "./components/Avatar/Avatar";
 import { Layout } from "./components/Layout/Layout";
+import { CardSeperator } from "./components/CardSeperator/CardSeperator";
 
 function App() {
   return (
     <div className="bg-neutral-main-dark-blue">
       <Layout>
         <Card>
-          <CardImage src="/equilibrium.jpg" alt="Equilibrium Logo" />
           <div className="mt-6 space-y-3">
+            <CardImage src="/equilibrium.jpg" alt="Equilibrium Logo" />
             <CardTitle>Equilibrium #3429</CardTitle>
             <CardDescription>Our Equilibrium collection promotes balance and calm</CardDescription>
             <div className="flex justify-between py-2">
@@ -34,7 +35,7 @@ function App() {
               </div>
             </div>
           </div>
-          <hr className="h-px my-4 text-neutral-line-dark-blue" />
+          <CardSeperator />
           <CardProfile>
             <Avatar src="/avatar.png" alt="Avatar" />
             <CardProfileName>
