@@ -11,10 +11,10 @@ import {
   CardProfile,
   CardProfileName,
   CardContent,
+  CardSeperator,
 } from "./components/Card/Card";
 import { Avatar } from "./components/Avatar/Avatar";
 import { Layout } from "./components/Layout/Layout";
-import { CardSeperator } from "./components/CardSeperator/CardSeperator";
 
 function App() {
   return (
