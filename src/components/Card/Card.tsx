@@ -80,3 +80,13 @@ export const CardProfileName = ({ children, className }: CardProfileNameProps) =
   const classes = ["text-primary-soft-blue", className].join(" ").trim();
   return <p className={classes}>{children}</p>;
 };
+
+interface CardContentProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export const CardContent = ({ children, className }: CardContentProps) => {
+  const classes = ["space-y-3", className].join(" ").trim();
+  return <div className={classes}>{children}</div>;
+};
