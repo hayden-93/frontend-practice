@@ -1,18 +1,24 @@
 import "./index.css";
 import { Zap, Clock } from "react-feather";
 
-import { Card, Avatar } from "./components/Card/Card";
+import { Card } from "./components/Card/Card";
+import { Avatar } from "./components/Avatar/Avatar";
+import { Layout } from "./components/Layout/Layout";
 
 function App() {
   return (
     <div className="bg-neutral-main-dark-blue">
-      <div className="max-w-screen-mobile mx-auto font-sans py-16">
+      <Layout className="max-w-screen-mobile mx-auto font-sans py-16">
         <Card className="bg-neutral-card-dark-blue mx-auto p-8 rounded-2xl">
           <div className="overflow-hidden">
-            <img src="/equilibrium.jpg" alt="Equilibrium Logo" className="rounded-2xl" />
+            <img
+              src="/equilibrium.jpg"
+              alt="Equilibrium Logo"
+              className="rounded-2xl hover:text-primary-cyan cursor-pointer"
+            />
           </div>
           <div className="mt-6 space-y-3">
-            <h3 className="text-white text-2xl font-bold">Equilibrium #3429</h3>
+            <h3 className="text-white text-2xl font-bold hover:text-primary-cyan cursor-pointer">Equilibrium #3429</h3>
             <p className="text-primary-soft-blue text-lg font-light">
               Our Equilibrium collection promotes balance and calm
             </p>
@@ -31,11 +37,14 @@ function App() {
           <div className="flex items-center space-x-4">
             <Avatar src="/avatar.png" alt="Avatar" className="border border-white rounded-full w-8 h-8" />
             <p className="text-primary-soft-blue">
-              Created by <span className="text-white font-semibold">Hayden Buckley-Smith</span>
+              Created by{" "}
+              <span className="text-white font-semibold hover:text-primary-cyan cursor-pointer">
+                Hayden Buckley-Smith
+              </span>
             </p>
           </div>
         </Card>
-      </div>
+      </Layout>
     </div>
   );
 }
