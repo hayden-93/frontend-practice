@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Avatar,
   Card,
@@ -14,22 +16,29 @@ import {
 } from "./components";
 
 function App() {
+  const [image] = useState({ src: "/equilibrium.jpg", alt: "Equilibrium Logo" });
+  const [title] = useState("Equilibrium #3429");
+  const [description] = useState("Our Equilibrium collection promotes balance and calm");
+  const [price] = useState("0.041 ETH");
+  const [deadline] = useState("3 days left");
+  const [name] = useState("Hayden Buckley-Smith");
+
   return (
     <Layout>
       <Card>
-        <CardImage src="/equilibrium.jpg" alt="Equilibrium Logo" />
+        <CardImage src={image.src} alt={image.alt} />
         <CardContent className="mt-6">
-          <CardTitle>Equilibrium #3429</CardTitle>
-          <CardDescription>Our Equilibrium collection promotes balance and calm</CardDescription>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
           <div className="flex justify-between py-2">
-            <CardPrice>0.041 ETH</CardPrice>
-            <CardDeadline>3 days left</CardDeadline>
+            <CardPrice>{price}</CardPrice>
+            <CardDeadline>{deadline}</CardDeadline>
           </div>
         </CardContent>
         <CardSeperator />
         <CardProfile>
           <Avatar src="/avatar.png" alt="Avatar" />
-          <CardProfileName>Hayden Buckley-Smith</CardProfileName>
+          <CardProfileName>{name}</CardProfileName>
         </CardProfile>
       </Card>
     </Layout>
