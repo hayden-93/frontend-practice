@@ -92,8 +92,7 @@ export const CardProfileName = ({ children, className }: CardProfileNameProps) =
   const classes = ["text-primary-soft-blue", className].join(" ").trim();
   return (
     <p className={classes}>
-      {children}
-      <span className="text-white font-semibold hover:text-primary-cyan cursor-pointer">Hayden Buckley-Smith</span>
+      Created by <span className="text-white font-semibold hover:text-primary-cyan cursor-pointer">{children}</span>
     </p>
   );
 };

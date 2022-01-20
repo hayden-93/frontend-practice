@@ -32,7 +32,7 @@ function App() {
         <CardSeperator />
         <CardProfile>
           <Avatar src="/avatar.png" alt="Avatar" />
-          <CardProfileName>Created by </CardProfileName>
+          <CardProfileName>Hayden Buckley-Smith</CardProfileName>
         </CardProfile>
       </Card>
     </Layout>
