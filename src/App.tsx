@@ -1,7 +1,7 @@
 import "./index.css";
-import { Zap, Clock } from "react-feather";
 
 import {
+  Avatar,
   Card,
   CardImage,
   CardTitle,
@@ -12,9 +12,8 @@ import {
   CardProfileName,
   CardContent,
   CardSeperator,
-} from "./components/Card/Card";
-import { Avatar } from "./components/Avatar/Avatar";
-import { Layout } from "./components/Layout/Layout";
+  Layout,
+} from "./components";
 
 function App() {
   return (
