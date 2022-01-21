@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { faker } from "./utils";
 import {
   Avatar,
   Card,
@@ -16,32 +15,40 @@ import {
   Layout,
 } from "./components";
 
-const createMocks = (() => [
-  {
-    id: faker.uuid(),
-    image: { src: "/equilibrium.jpg", alt: "Equilibrium Logo" },
-    title: "Equilibrium #3429",
-    description: "Our Equilibrium collection promotes balance and calm.",
-    price: 0.041,
-    deadline: { time: 3, format: "day" },
-    user: { name: "Jules Wyvern", avatar: { src: "/avatar.png", alt: "Avatar" } },
-  },
-  ...new Array(3).fill(null).map(() => ({
-    id: faker.uuid(),
-    image: { src: faker.image(), alt: faker.description() },
-    title: `${faker.name()} #${faker.number()}`,
-    description: faker.description(),
-    price: faker.number({ min: 0, max: 1, precision: 0.001 }),
-    deadline: {
-      time: faker.number({ min: 1, max: 30, precision: 1 }),
-      format: faker.random(["second", "minute", "hour", "day", "week"]),
-    },
-    user: { name: faker.fullName(), avatar: { src: faker.avatar(), alt: faker.description() } },
-  })),
-])();
+interface NFTPreview {
+  id: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  title: string;
+  description: string;
+  price: number;
+  deadline: {
+    time: number;
+    format: "second" | "minute" | "hour" | "day" | "week" | "month" | "year";
+  };
+  user: {
+    name: string;
+    avatar: {
+      src: string;
+      alt: string;
+    };
+  };
+}
 
 function App() {
-  const [nftPreviews, setNftPreviews] = useState(() => createMocks);
+  const [nftPreviews, setNftPreviews] = useState<NFTPreview[]>([]);
+
+  useEffect(() => {
+    const fetchPreviews = async () => {
+      const response = await fetch("/marketplace");
+      const data = await response.json();
+      setNftPreviews(data);
+    };
+
+    fetchPreviews();
+  }, []);
 
   return (
     <Layout>
