@@ -53,22 +53,57 @@ export const CardPrice = ({ children, className }: CardPriceProps) => {
   return (
     <div className={classes}>
       <Zap className="fill-primary-cyan w-4 h-4" />
-      <span className="text-sm">{children}</span>
+      <span className="text-sm">{children} ETH</span>
     </div>
   );
 };
 
 interface CardDeadlineProps {
-  children: ReactNode;
   className?: string;
+  timeRemaining: number;
+  format: "second" | "minute" | "hour" | "day" | "week" | "month" | "year";
 }
 
-export const CardDeadline = ({ children, className }: CardDeadlineProps) => {
+const timeFormats = {
+  second: {
+    singular: "second",
+    plural: "seconds",
+  },
+  minute: {
+    singular: "minute",
+    plural: "minutes",
+  },
+  hour: {
+    singular: "hour",
+    plural: "hours",
+  },
+  day: {
+    singular: "day",
+    plural: "days",
+  },
+  week: {
+    singular: "week",
+    plural: "weeks",
+  },
+  month: {
+    singular: "month",
+    plural: "months",
+  },
+  year: {
+    singular: "year",
+    plural: "years",
+  },
+} as const;
+
+export const CardDeadline = ({ className, timeRemaining, format }: CardDeadlineProps) => {
   const classes = ["flex text-primary-soft-blue items-center space-x-1", className].join(" ").trim();
   return (
     <div className={classes}>
       <Clock className="w-4 h-4" />
-      <span className="text-sm">{children}</span>
+
+      <span className="text-sm">
+        {timeRemaining} {timeFormats[format][timeRemaining === 1 ? "singular" : "plural"]} left
+      </span>
     </div>
   );
 };
@@ -92,7 +127,7 @@ export const CardProfileName = ({ children, className }: CardProfileNameProps) =
   const classes = ["text-primary-soft-blue", className].join(" ").trim();
   return (
     <p className={classes}>
-      Created by <span className="text-white font-semibold hover:text-primary-cyan cursor-pointer">{children}</span>
+      Creation of <span className="text-white font-semibold hover:text-primary-cyan cursor-pointer">{children}</span>
     </p>
   );
 };
