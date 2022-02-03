@@ -21,6 +21,14 @@ module.exports = {
     fontFamily: {
       sans: ["Outfit", "sans-serif"],
     },
+    extend: {
+      backgroundImage: {
+        quotation: "url(/testimonials-grid/quotation.svg)",
+      },
+      minWidth: {
+        8: "32px",
+      },
+    },
   },
   plugins: [],
 };
