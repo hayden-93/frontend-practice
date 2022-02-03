@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@nft/*": ["src/projects/nft-preview-card/*"]
+      "@nft/*": ["src/projects/nft-preview-card/*"],
+      "@testimonials/*": ["src/projects/testimonials-grid/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,

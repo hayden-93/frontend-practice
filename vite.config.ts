@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@nft": path.join(process.cwd(), "src", "projects", "nft-preview-card"),
+      "@testimonials-grid": path.join(process.cwd(), "src", "projects", "testimonials-grid"),
     },
   },
 });
