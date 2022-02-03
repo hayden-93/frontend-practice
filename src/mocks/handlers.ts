@@ -5,12 +5,12 @@ import { faker } from "../utils";
 const mockData = [
   {
     id: faker.uuid(),
-    image: { src: "/equilibrium.jpg", alt: "Equilibrium Logo" },
+    image: { src: "/nft-preview-card/equilibrium.jpg", alt: "Equilibrium Logo" },
     title: "Equilibrium #3429",
     description: "Our Equilibrium collection promotes balance and calm.",
     price: 0.041,
     deadline: { time: 3, format: "day" },
-    user: { name: "Jules Wyvern", avatar: { src: "/avatar.png", alt: "Avatar" } },
+    user: { name: "Jules Wyvern", avatar: { src: "/nft-preview-card/avatar.png", alt: "Avatar" } },
   },
   ...new Array(3).fill(null).map(() => ({
     id: faker.uuid(),
