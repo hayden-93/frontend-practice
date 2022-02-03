@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 
-export default function App() {
+export function Projects() {
   return (
-    <main>
+    <>
       <Outlet />
-    </main>
+    </>
   );
 }

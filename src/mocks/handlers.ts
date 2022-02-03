@@ -1,6 +1,6 @@
 import { rest } from "msw";
 
-import { faker } from "../utils";
+import { faker } from "@nft/utils";
 
 const mockData = [
   {
