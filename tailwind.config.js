@@ -10,9 +10,14 @@ module.exports = {
       "neutral-light-gray": "hsl(0, 0%, 81%)",
       "neutral-light-grayish-blue": "hsl(210, 46%, 95%)",
       white: "#ffffff",
-      violet: "hsl(263, 55%, 52%)",
       "dark-grayish-blue": "hsl(217, 19%, 35%)",
       "dark-blackish-blue": "hsl(219, 29%, 14%)",
+      "neutral-1": "#ffffff",
+      "neutral-2": "hsl(0, 0%, 81%)",
+      "neutral-3": "hsl(210, 46%, 95%)",
+      "neutral-4": "hsl(217, 19%, 35%)",
+      "neutral-5": "hsl(219, 29%, 14%)",
+      violet: "hsl(263, 55%, 52%)",
     },
     screens: {
       mobile: "375px",
@@ -27,6 +32,9 @@ module.exports = {
       },
       minWidth: {
         8: "32px",
+      },
+      fontSize: {
+        xxs: "10px",
       },
     },
   },
