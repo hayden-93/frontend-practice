@@ -3,7 +3,11 @@
     "baseUrl": ".",
     "paths": {
       "@nft/*": ["src/projects/nft-preview-card/*"],
+
       "@testimonials/*": ["src/projects/testimonials-grid/*"]
+
+      "@stats-card/*": ["src/projects/stats-card/*"]
+
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -21,5 +25,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./src"]
+  "include": ["./src"],
+  "exclude": ["node_modules"]
 }
