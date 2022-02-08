@@ -62,7 +62,7 @@ const cardTitleColorVariants = {
 };
 
 const CardTitle = ({ children, className, color = "light", ...props }: PropsWithChildren<CardTitleProps>) => {
-  const classes = ["text-xl", cardTitleColorVariants[color], className].join(" ").trim();
+  const classes = ["text-xl font-medium md:text-xl", cardTitleColorVariants[color], className].join(" ").trim();
 
   return (
     <h3 className={classes} {...props}>
@@ -77,13 +77,14 @@ interface CardDescriptionProps {
 }
 
 const cardDescriptionColorVariants = {
-  lightGray: "text-neutral-2",
+  light: "text-neutral-2",
+  dark: "text-neutral-4",
 };
 
 const CardDescription = ({
   children,
   className,
-  color = "lightGray",
+  color = "light",
   ...props
 }: PropsWithChildren<CardDescriptionProps>) => {
   const classes = ["text-sm font-extralight opacity-70", cardDescriptionColorVariants[color], className]

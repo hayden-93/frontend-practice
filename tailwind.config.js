@@ -20,8 +20,12 @@ module.exports = {
       violet: "hsl(263, 55%, 52%)",
     },
     screens: {
-      mobile: "375px",
-      desktop: "1440px",
+      xxs: "480px",
+      xs: "640px",
+      sm: "768px",
+      md: "1024px",
+      lg: "1280px",
+      xl: "1440px",
     },
     fontFamily: {
       sans: ["Outfit", "sans-serif"],
