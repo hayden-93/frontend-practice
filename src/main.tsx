@@ -6,7 +6,9 @@ import "./index.css";
 
 import App from "./App";
 import { Home, Projects, ProjectsHome } from "./routes";
-import { NFTPreviewCard, StatsCard } from "./projects";
+
+import { NFTPreviewCard, StatsCard, TestimonialsGrid } from "./projects";
+
 
 if (process.env.NODE_ENV === "development") {
   const { worker } = require("./mocks/browser");
@@ -20,8 +22,10 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />}>
-            <Route path="nft-preview-card" element={<NFTPreviewCard />} />
+            <Route path="stats-card" element={""} />
+            <Route path="testimonials-grid" element={<TestimonialsGrid />} />
             <Route path="stats-card" element={<StatsCard />} />
+
             <Route index element={<ProjectsHome />} />
           </Route>
         </Route>

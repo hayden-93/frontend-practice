@@ -3,7 +3,11 @@
     "baseUrl": ".",
     "paths": {
       "@nft/*": ["src/projects/nft-preview-card/*"],
+
+      "@testimonials/*": ["src/projects/testimonials-grid/*"]
+
       "@stats-card/*": ["src/projects/stats-card/*"]
+
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
