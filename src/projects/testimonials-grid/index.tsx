@@ -1,4 +1,5 @@
 import { Card } from "./components/Card/Card";
+import { UserProfile } from "./components/UserProfile";
 
 interface TestimonialsGridProps {
   className?: string;
@@ -15,17 +16,13 @@ export function TestimonialsGrid({ className }: TestimonialsGridProps) {
             className="before:content-[''] before:absolute before:top-0 before:right-6 before:bg-quotation before:w-28 before:h-28 before:bg-cover before:bg-no-repeat before:-z-10 relative z-10 rounded-xl overflow-hidden p-8 space-y-4 md:before:right-20 md:col-span-2 md:order-1"
           >
             <Card.Header>
-              <div className="flex">
-                <img
-                  src="/testimonials-grid/image-daniel.jpg"
-                  alt="Daniel Clifford"
-                  className="self-center min-w-8 w-8 h-8 border border-b-neutral-main-dark-blue rounded-full"
-                />
+              <UserProfile>
+                <UserProfile.Avatar src="/testimonials-grid/image-daniel.jpg" alt="Daniel Clifford" color="lightGray" />
                 <div className="pl-4">
-                  <p className="text-neutral-light-grayish-blue text-xs">Daniel Clifford</p>
-                  <p className="text-neutral-light-grayish-blue text-xs opacity-50">Verified Graduate</p>
+                  <UserProfile.Name>Daniel Clifford</UserProfile.Name>
+                  <UserProfile.Title>Verified Graduate</UserProfile.Title>
                 </div>
-              </div>
+              </UserProfile>
             </Card.Header>
             <Card.Content>
               <Card.Title color="light">
@@ -43,17 +40,13 @@ export function TestimonialsGrid({ className }: TestimonialsGridProps) {
           </Card>
           <Card bg="darkGray" className="md:order-1">
             <Card.Header>
-              <div className="flex">
-                <img
-                  src="/testimonials-grid/image-jonathan.jpg"
-                  alt="Jonathan Walters"
-                  className="self-center min-w-8 w-8 h-8 border border-b-neutral-main-dark-blue rounded-full"
-                />
+              <UserProfile>
+                <UserProfile.Avatar src="/testimonials-grid/image-jonathan.jpg" alt="Jonathan Walters" />
                 <div className="pl-4">
-                  <p className="text-neutral-light-grayish-blue text-xs">Jonathan Walters</p>
-                  <p className="text-neutral-light-grayish-blue text-xs opacity-50">Verified Graduate</p>
+                  <UserProfile.Name>Jonathan Walters</UserProfile.Name>
+                  <UserProfile.Title>Verified Graduate</UserProfile.Title>
                 </div>
-              </div>
+              </UserProfile>
             </Card.Header>
             <Card.Content>
               <Card.Title color="light">The team was very supportive and kept me motivated</Card.Title>
@@ -65,17 +58,13 @@ export function TestimonialsGrid({ className }: TestimonialsGridProps) {
           </Card>
           <Card className="md:order-2">
             <Card.Header>
-              <div className="flex">
-                <img
-                  src="/testimonials-grid/image-jeanette.jpg"
-                  alt="Jeanette Harmon"
-                  className="self-center min-w-8 w-8 h-8 rounded-full"
-                />
+              <UserProfile>
+                <UserProfile.Avatar src="/testimonials-grid/image-jeanette.jpg" alt="Jeanette Harmon" />
                 <div className="pl-4">
-                  <h2 className="text-neutral-main-dark-blue text-xs font-semibold opacity-70">Jeanette Harmon</h2>
-                  <p className="text-neutral-main-dark-blue text-xs opacity-50">Verified Graduate</p>
+                  <UserProfile.Name color="dark">Jeanette Harmon</UserProfile.Name>
+                  <UserProfile.Title color="dark">Verified Graduate</UserProfile.Title>
                 </div>
-              </div>
+              </UserProfile>
             </Card.Header>
             <Card.Content>
               <Card.Title color="dark">An overall wonderful and rewarding experience</Card.Title>
@@ -87,17 +76,13 @@ export function TestimonialsGrid({ className }: TestimonialsGridProps) {
           </Card>
           <Card bg="darkBlue" className="md:col-span-2 md:order-2">
             <Card.Header>
-              <div className="flex">
-                <img
-                  src="/testimonials-grid/image-patrick.jpg"
-                  alt="Patrick Abrams"
-                  className="self-center min-w-8 w-8 h-8 border-2 border-violet rounded-full"
-                />
+              <UserProfile>
+                <UserProfile.Avatar src="/testimonials-grid/image-patrick.jpg" alt="Patrick Abrams" color="violet" />
                 <div className="pl-4">
-                  <h2 className="text-neutral-light-grayish-blue text-xs">Patrick Abrams</h2>
-                  <p className="text-neutral-light-grayish-blue text-xs opacity-50">Verified Graduate</p>
+                  <UserProfile.Name>Patrick Abrams</UserProfile.Name>
+                  <UserProfile.Title>Verified Graduate</UserProfile.Title>
                 </div>
-              </div>
+              </UserProfile>
             </Card.Header>
             <Card.Content>
               <Card.Title color="light">
@@ -114,17 +99,13 @@ export function TestimonialsGrid({ className }: TestimonialsGridProps) {
           </Card>
           <Card className="md:order-1 md:row-span-2">
             <Card.Header>
-              <div className="flex">
-                <img
-                  src="/testimonials-grid/image-kira.jpg"
-                  alt="Kira Whittle"
-                  className="self-center min-w-8 w-8 h-8 rounded-full"
-                />
+              <UserProfile>
+                <UserProfile.Avatar src="/testimonials-grid/image-kira.jpg" alt="Kira Whittle" />
                 <div className="pl-4">
-                  <p className="text-neutral-line-dark-blue text-xs">Kira Whittle</p>
-                  <p className="text-neutral-line-dark-blue text-xs opacity-50">Verified Graduate</p>
+                  <UserProfile.Name color="dark">Kira Whittle</UserProfile.Name>
+                  <UserProfile.Title color="dark">Verified Graduate</UserProfile.Title>
                 </div>
-              </div>
+              </UserProfile>
             </Card.Header>
             <Card.Content>
               <Card.Title color="dark">Such a life-changing experience. Highly recommended!</Card.Title>
