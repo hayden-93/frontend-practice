@@ -70,7 +70,6 @@ module.exports = {
         desktop: "1440px",
       },
     },
-    colors: {},
   },
   plugins: [],
 };
