@@ -8,7 +8,7 @@ export const Header = ({ children, className, ...props }: PropsWithChildren<Head
   const classes = ["", className].join(" ").trim();
   return (
     <header className={classes}>
-      <img src="../../clipboard-landing-page/bg-header-desktop.png" alt="Desktop Header Background" />
+      <img src="/clipboard-landing-page/bg-header-desktop.png" alt="Desktop Header Background" />
       {children}
     </header>
   );
