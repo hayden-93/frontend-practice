@@ -18,6 +18,10 @@ module.exports = {
       "neutral-4": "hsl(217, 19%, 35%)",
       "neutral-5": "hsl(219, 29%, 14%)",
       violet: "hsl(263, 55%, 52%)",
+      "clipboard-cyan": "hsl(171, 66%, 44%)",
+      "clipboard-light-blue": "hsl(233, 100%, 69%)",
+      "clipboard-dark-grayish-blue": "hsl(210, 10%, 33%)",
+      "clipboard-grayish-blue": "hsl(201, 11%, 66%)",
     },
     screens: {
       xxs: "480px",

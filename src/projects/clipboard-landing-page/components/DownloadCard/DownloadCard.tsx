@@ -5,9 +5,9 @@ interface DownloadCardProps {
 }
 
 export const DownloadCard = ({ children, className }: PropsWithChildren<DownloadCardProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["max-w-screen-xs mx-auto text-center space-y-4", className].join(" ").trim();
 
-  return <div>{children}</div>;
+  return <div className={classes}>{children}</div>;
 };
 
 interface DownloadCardTitleProps {
@@ -15,9 +15,9 @@ interface DownloadCardTitleProps {
 }
 
 const DownloadCardTitle = ({ className }: DownloadCardTitleProps) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["text-3xl text-clipboard-dark-grayish-blue", className].join(" ").trim();
 
-  return <h2>A history of everything you copy</h2>;
+  return <h2 className={classes}>A history of everything you copy</h2>;
 };
 
 interface DownloadCardDescriptionProps {
@@ -25,10 +25,10 @@ interface DownloadCardDescriptionProps {
 }
 
 const DownloadCardDescription = ({ className }: DownloadCardDescriptionProps) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["text-sm text-clipboard-grayish-blue", className].join(" ").trim();
 
   return (
-    <p>
+    <p className={classes}>
       Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your
       devices.
     </p>
@@ -38,13 +38,12 @@ interface DownloadCardButtonProps {
   className?: string;
 }
 
-const DownloadCardButton = ({ className }: DownloadCardButtonProps) => {
-  const classes = ["", className].join(" ").trim();
+const DownloadCardButton = ({ children, className }: PropsWithChildren<DownloadCardButtonProps>) => {
+  const classes = ["text-white py-2 px-6 text-sm rounded-full shadow border-b", className].join(" ").trim();
 
   return (
     <>
-      <button>Download for iOS</button>
-      <button>Download for Mac</button>
+      <button className={classes}>{children}</button>
     </>
   );
 };
