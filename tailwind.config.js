@@ -32,18 +32,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        quotation: "url(/testimonials-grid/quotation.svg)",
-      },
-      minWidth: {
-        8: "32px",
-      },
-      fontSize: {
-        xxs: "10px",
-      },
-    },
-    extend: {
-      backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
+        quotation: "url('/testimonials-grid/quotation.svg')",
+        sunnyside: "url('/sunnyside-agency/image-header.jpg')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
@@ -68,10 +59,25 @@ module.exports = {
         "sunny-dark-grayish-blue": "hsl(232, 10%, 55%)",
         "sunny-grayish-blue": "hsl(210, 4%, 67%)",
       },
+      fontSize: {
+        xxs: "10px",
+      },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
       },
+      spacing: {
+        "vh-1": "10vh",
+        "vh-2": "20vh",
+        "vh-3": "30vh",
+        "vh-4": "40vh",
+        "vh-5": "50vh",
+        "vh-6": "60vh",
+        "vh-7": "70vh",
+        "vh-8": "80vh",
+        "vh-9": "90vh",
+      },
       minWidth: {
+        8: "32px",
         "1/2": "50%",
       },
       screens: {
