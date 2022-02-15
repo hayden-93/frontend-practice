@@ -51,24 +51,24 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
             </div>
           </div>
         </section>
-        <section className="mt-20 max-w-screen-xs mx-auto text-center space-y-4">
+        <section className="mt-24 max-w-screen-xxs mx-auto text-center space-y-4">
           <h2 className="text-xl text-clipboard-dark-grayish-blue">Access Clipboard anywhere</h2>
           <p className="text-xs text-clipboard-grayish-blue font-light">
             Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple
             clicks.
           </p>
         </section>
-        <div className="max-w-screen-desktop mx-auto mt-14">
-          <img src="/clipboard-landing-page/image-devices.png" alt="Computer and Mobile Devices" className="" />
+        <div className="max-w-screen-desktop mx-auto mt-24">
+          <img src="/clipboard-landing-page/image-devices.png" alt="Computer and Mobile Devices" className="mx-auto" />
         </div>
-        <section className="max-w-screen-lg mx-auto text-center">
-          <h2 className="text-xl text-clipboard-dark-grayish-blue">Supercharge your workflow</h2>
+        <section className="max-w-screen-lg mx-auto text-center space-y-4">
+          <h2 className="text-2xl text-clipboard-dark-grayish-blue">Supercharge your workflow</h2>
           <p className="text-xs text-clipboard-grayish-blue font-light">
             We've got the tools to boost your productivity.
           </p>
-          <div className="flex mt-14">
-            <div>
-              <svg width="44" height="40" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex mt-14 justify-between">
+            <div className="block max-w-screen-xxs mt-14 space-y-4">
+              <svg width="44" height="40" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
                 <g fill="#9EABB2" fill-rule="nonzero">
                   <path d="M11.07 0C8.353 0 6.14 2.192 6.14 4.876l-.179 25.278 2.69.02.179-25.289c0-1.21 1.005-2.196 2.24-2.196h27.027V0H11.071z" />
                   <path d="M38.097 0a5.115 5.115 0 00-5.11 5.11v28.37c0 2.052-1.668 3.72-3.72 3.72a3.725 3.725 0 01-3.72-3.72V30.21c0-.743-.601-1.345-1.344-1.345H1.345C.602 28.864 0 29.466 0 30.21v3.272a6.417 6.417 0 006.41 6.409V37.2a3.724 3.724 0 01-3.72-3.72v-1.927h20.168v1.928a6.417 6.417 0 006.41 6.409 6.417 6.417 0 006.409-6.41V12.46h6.185c.743 0 1.345-.602 1.345-1.345V5.11A5.115 5.115 0 0038.097 0zm2.42 9.77h-4.84V5.11a2.423 2.423 0 012.42-2.42 2.423 2.423 0 012.42 2.42v4.66z" />
@@ -77,11 +77,15 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
               </svg>
               <h3 className="text-xl text-clipboard-dark-grayish-blue">Create blacklists</h3>
               <p className="text-xs text-clipboard-grayish-blue font-light">
-                Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+                Ensure sensitive information never makes its
+                <br />
+                way to your clipboard by excluding certain
+                <br />
+                sources.
               </p>
             </div>
-            <div className="">
-              <svg width="36" height="32" xmlns="http://www.w3.org/2000/svg">
+            <div className="block max-w-screen-xxs mt-14 space-y-4">
+              <svg width="36" height="32" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
                 <path
                   d="M17.872 14.736a235.39 235.39 0 012.192 5.744c.746 2.027 1.536 4.24 2.368 6.64h-5.344a44.4 44.4 0 00-.784-2.368c-.288-.81-.57-1.632-.848-2.432h-8.64c-.278.8-.56 1.621-.848 2.432a44.4 44.4 0 00-.784 2.368H0a371.54 371.54 0 012.368-6.644 233.104 233.104 0 012.192-5.748 206.71 206.71 0 012.112-5.112c.693-1.61 1.413-3.136 2.16-4.736H13.6c.725 1.6 1.44 3.125 2.144 4.736.704 1.61 1.413 3.328 2.128 5.12zM7.968 18.32h6.303c-.34-.96-.671-1.878-.991-2.752a94.407 94.407 0 00-.912-2.4c-.288-.725-.539-1.365-.752-1.92-.214-.555-.384-.992-.512-1.313-.107.32-.267.758-.48 1.313a1241.872 1241.872 0 00-1.648 4.32c-.331.874-.667 1.792-1.008 2.752zM35.04 3.2h-3.2v25.6h3.2V32h-9.6v-3.2h3.2V3.2h-3.2V0h9.6v3.2z"
                   fill="#9EABB2"
@@ -90,23 +94,31 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
               </svg>
               <h3 className="text-xl text-clipboard-dark-grayish-blue">Plain text snippets</h3>
               <p className="text-xs text-clipboard-grayish-blue font-light">
-                Remove unwanted formatting from copied text for a consistent look.
+                Remove unwanted formatting from copied text <br />
+                for a consistent look.
               </p>
             </div>
-            <div className="">
-              <img src="/clipboard-landing-page/icon-preview.svg" alt="Preview Logo" />
+            <div className="block max-w-screen-xxs mt-14 space-y-4">
+              <img src="/clipboard-landing-page/icon-preview.svg" alt="Preview Logo" className="mx-auto" />
               <h3 className="text-xl text-clipboard-dark-grayish-blue">Sneak preview</h3>
               <p className="text-xs text-clipboard-grayish-blue font-light">
-                Quick preview of all snippets on your Clipboard for easy access.
+                Quick preview of all snippets on your Clipboard <br />
+                for easy access.
               </p>
             </div>
           </div>
         </section>
-        <img src="/clipboard-landing-page/logo-google.png" alt="Google Logo" />
-        <img src="/clipboard-landing-page/logo-ibm.png" alt="IBM Logo" />
-        <img src="/clipboard-landing-page/logo-microsoft.png" alt="Microsoft Logo" />
-        <img src="/clipboard-landing-page/logo-hp.png" alt="Hewlett Packard Enterprise Logo" />
-        <img src="/clipboard-landing-page/logo-vector-graphics.png" alt="Vector Graphics Logo" />
+        <div className="flex max-w-screen-lg mx-auto mt-14 justify-between">
+          <img src="/clipboard-landing-page/logo-google.png" alt="Google Logo" className="w-auto h-10" />
+          <img src="/clipboard-landing-page/logo-ibm.png" alt="IBM Logo" className="w-auto h-10" />
+          <img src="/clipboard-landing-page/logo-microsoft.png" alt="Microsoft Logo" className="w-auto h-10" />
+          <img src="/clipboard-landing-page/logo-hp.png" alt="HP Logo" className="w-auto h-10" />
+          <img
+            src="/clipboard-landing-page/logo-vector-graphics.png"
+            alt="Vector Graphics Logo"
+            className="w-auto h-10"
+          />
+        </div>
         <h2>Clipboard for iOS and Mac OS</h2>
         <p>
           Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start
