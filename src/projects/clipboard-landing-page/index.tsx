@@ -58,10 +58,10 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
             clicks.
           </p>
         </section>
-        <div className="max-w-screen-desktop mx-auto mt-24">
+        <section className="max-w-screen-desktop mx-auto mt-24">
           <img src="/clipboard-landing-page/image-devices.png" alt="Computer and Mobile Devices" className="mx-auto" />
-        </div>
-        <section className="max-w-screen-lg mx-auto text-center space-y-4">
+        </section>
+        <section className="max-w-screen-md mx-auto text-center space-y-4">
           <h2 className="text-2xl text-clipboard-dark-grayish-blue">Supercharge your workflow</h2>
           <p className="text-xs text-clipboard-grayish-blue font-light">
             We've got the tools to boost your productivity.
@@ -108,7 +108,7 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
             </div>
           </div>
         </section>
-        <div className="flex max-w-screen-lg mx-auto mt-14 justify-between">
+        <section className="flex max-w-screen-lg mx-auto mt-32 justify-between">
           <img src="/clipboard-landing-page/logo-google.png" alt="Google Logo" className="w-auto h-10" />
           <img src="/clipboard-landing-page/logo-ibm.png" alt="IBM Logo" className="w-auto h-10" />
           <img src="/clipboard-landing-page/logo-microsoft.png" alt="Microsoft Logo" className="w-auto h-10" />
@@ -118,23 +118,31 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
             alt="Vector Graphics Logo"
             className="w-auto h-10"
           />
-        </div>
-        <h2>Clipboard for iOS and Mac OS</h2>
-        <p>
-          Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start
-          adding to your clipboard.
-        </p>
-        <div>
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
-        </div>
+        </section>
+        <section className="max-w-screen-xxs mx-auto text-center space-y-4 mt-32">
+          <h2 className="text-2xl text-clipboard-dark-grayish-blue">Clipboard for iOS and Mac OS</h2>
+          <p className="text-xs text-clipboard-grayish-blue font-light">
+            Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start
+            adding to your clipboard.
+          </p>
+          <div className="space-x-3">
+            <DownloadCard.Button className="bg-clipboard-cyan border-b-clipboard-cyan shadow-clipboard-cyan">
+              Download for iOS
+            </DownloadCard.Button>
+            <DownloadCard.Button className="bg-clipboard-light-blue border-b-clipboard-light-blue shadow-clipboard-light-blue">
+              Download for Mac
+            </DownloadCard.Button>
+          </div>
+        </section>
       </main>
       <Footer>
-        <img src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" />
-        <div className="block">
-          <nav>
-            <ul>
-              <li>
+        <div className="flex justify-around h-1/5">
+          <div className="">
+            <img src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" className="w-auto h-12" />
+          </div>
+          <div className="flex">
+            <ul className="grid grid-cols-3 text-clipboard-dark-grayish-blue">
+              <li className="">
                 <a href="#">FAQs</a>
               </li>
               <li>
@@ -150,12 +158,12 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
                 <a href="#">Install Guide</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div>
-          <img src="/clipboard-landing-page/icon-twitter.svg" alt="Twitter" />
-          <img src="/clipboard-landing-page/icon-facebook.svg" alt="Facebook" />
-          <img src="/clipboard-landing-page/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <div className="flex self-center space-x-6">
+            <img src="/clipboard-landing-page/icon-facebook.svg" alt="Facebook" className="w-6 h-6" />
+            <img src="/clipboard-landing-page/icon-twitter.svg" alt="Twitter" className="w-6 h-6" />
+            <img src="/clipboard-landing-page/icon-instagram.svg" alt="Instagram" className="w-6 h-6" />
+          </div>
         </div>
       </Footer>
     </div>
