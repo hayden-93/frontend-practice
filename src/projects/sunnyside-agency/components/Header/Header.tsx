@@ -3,35 +3,36 @@ interface HeaderProps {
 }
 
 export const Header = ({ className }: HeaderProps) => {
-  const classes = ["max-w-screen-desktop mx-auto", className].join(" ").trim();
+  const classes = ["bg-sunnyside-blue py-10 px-8", className].join(" ").trim();
+
   return (
     <>
       <header className={classes}>
-        <img src="/sunnyside-agency/logo.svg" alt="Sunnyside Agency Logo" className="absolute py-8 px-6 w-52 h-auto" />
-        <div className="flex justify-end">
-          <nav className="absolute">
-            <ul className="flex justify-end space-x-12 items-center mt-5 py-3 px-10 text-lg">
-              <li className="text-white">
-                <a href="#">About</a>
-              </li>
-              <li className="text-white">
-                <a href="#">Services</a>
-              </li>
-              <li className="text-white">
-                <a href="#">Projects</a>
-              </li>
-              <button className="rounded-full bg-white py-3 px-6 font-medium">CONTACT</button>
-            </ul>
+        <div className="flex items-center justify-between max-w-screen-desktop mx-auto px-2 space-x-4">
+          <img src="/sunnyside-agency/logo.svg" alt="Sunnyside Agency Logo" className="block relative w-auto h-8" />
+          <nav className="flex items-center space-x-12">
+            <a href="#" className="block text-white">
+              About
+            </a>
+            <a href="#" className="block text-white">
+              Services
+            </a>
+            <a href="#" className="block text-white">
+              Projects
+            </a>
+            <a href="#" className="rounded-full bg-white py-3 px-6 font-medium uppercase hover:opacity-40">
+              Contact
+            </a>
           </nav>
         </div>
-        <div className="max-w-screen-sm mx-auto">
-          <h1 className="absolute text-white text-6xl font-extrabold tracking-widest uppercase top-36 ml-12">
+        {/* <div className="max-w-screen-sm mx-auto">
+          <h1 className="absolute text-white text-6xl font-extrabold tracking-widest uppercase top-60 ml-12">
             We Are Creatives
           </h1>
-        </div>
-        <div className="relative max-w-screen-sm mx-auto left-80 place-items-center">
-          <img src="/sunnyside-agency/icon-arrow-down.svg" alt="Down Arrow Icon" className="absolute top-72" />
-        </div>
+        </div> */}
+        {/* <div className="relative max-w-screen-xxs mx-auto left-56 place-items-center">
+          <img src="/sunnyside-agency/icon-arrow-down.svg" alt="Down Arrow Icon" className="absolute top-96" />
+        </div> */}
       </header>
     </>
   );
