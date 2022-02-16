@@ -35,6 +35,8 @@ module.exports = {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
         quotation: "url('/testimonials-grid/quotation.svg')",
         sunnyside: "url('/sunnyside-agency/image-header.jpg')",
+        "sunnyside-cherry": "url('/sunnyside-agency/image-graphic-design.jpg')",
+        "sunnyside-orange": "url('/sunnyside-agency/image-photography.jpg')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
@@ -58,6 +60,7 @@ module.exports = {
         "sunny-very-dark-grayish-blue": "hsl(213, 9%, 39%)",
         "sunny-dark-grayish-blue": "hsl(232, 10%, 55%)",
         "sunny-grayish-blue": "hsl(210, 4%, 67%)",
+        "sunnyside-blue": "hsl(200, 100%, 62%)",
       },
       fontSize: {
         xxs: "10px",
