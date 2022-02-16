@@ -108,7 +108,7 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
             </div>
           </div>
         </section>
-        <section className="flex max-w-screen-lg mx-auto mt-32 justify-between">
+        <section className="flex max-w-screen-md mx-auto mt-32 justify-between">
           <img src="/clipboard-landing-page/logo-google.png" alt="Google Logo" className="w-auto h-10" />
           <img src="/clipboard-landing-page/logo-ibm.png" alt="IBM Logo" className="w-auto h-10" />
           <img src="/clipboard-landing-page/logo-microsoft.png" alt="Microsoft Logo" className="w-auto h-10" />
@@ -136,9 +136,9 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
         </section>
       </main>
       <Footer>
-        <div className="flex justify-around h-1/5">
+        <div className="flex max-w-screen-md mx-auto justify-between h-1/5">
           <div className="">
-            <img src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" className="w-auto h-12" />
+            <img src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" className="w-auto h-16" />
           </div>
           <div className="flex">
             <ul className="grid grid-cols-3 text-clipboard-dark-grayish-blue">
