@@ -1,4 +1,4 @@
-import { Header, Hero } from "./components";
+import { Hero } from "./components";
 
 export function SunnysideAgency() {
   return (
@@ -23,7 +23,7 @@ export function SunnysideAgency() {
           <h3>Stand out to the right audience</h3>
           <p>
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
-            we’ll build and extend your brand in digital places.
+            we'll build and extend your brand in digital places.
           </p>
           <a href="#" className="uppercase">
             Learn More
