@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 export const Header = ({ children, className, ...props }: PropsWithChildren<HeaderProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["bg-header-image bg-no-repeat bg-center", className].join(" ").trim();
   return (
     <header className={classes}>
       <img src="/clipboard-landing-page/bg-header-desktop.png" alt="Desktop Header Background" />
