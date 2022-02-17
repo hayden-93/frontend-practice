@@ -35,19 +35,13 @@ module.exports = {
       sans: ["Outfit", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        quotation: "url(/testimonials-grid/quotation.svg)",
-      },
-      minWidth: {
-        8: "32px",
-      },
       fontSize: {
         xxs: "10px",
       },
-    },
-    extend: {
       backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
+        quotation: "url(/testimonials-grid/quotation.svg)",
+        "header-image": "url('/clipboard-landing-page/logo.svg')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
@@ -67,6 +61,7 @@ module.exports = {
         sans: ["Outfit", "sans-serif"],
       },
       minWidth: {
+        8: "32px",
         "1/2": "50%",
       },
       screens: {
