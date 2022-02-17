@@ -1,4 +1,4 @@
-import { Footer, Header } from "./components";
+import { Button, Footer, Header } from "./components";
 import { DownloadCard } from "./components/DownloadCard/DownloadCard";
 
 interface ClipboardLandingPageProps {
@@ -9,20 +9,21 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
   const classes = ["max-w-screen-2xl", className].join(" ").trim();
   return (
     <div className={classes}>
-      <Header>
-        <Header.Logo src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" />
-      </Header>
+      <Header></Header>
       <main>
         <DownloadCard>
-          <DownloadCard.Title></DownloadCard.Title>
-          <DownloadCard.Description></DownloadCard.Description>
+          <DownloadCard.Title>A history of everything you copy</DownloadCard.Title>
+          <DownloadCard.Description>
+            Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your
+            devices.
+          </DownloadCard.Description>
           <div className="space-x-3">
-            <DownloadCard.Button className="bg-clipboard-cyan border-b-clipboard-cyan shadow-clipboard-cyan">
+            <Button className="bg-clipboard-cyan border-b-clipboard-cyan shadow-clipboard-cyan">
               Download for iOS
-            </DownloadCard.Button>
-            <DownloadCard.Button className="bg-clipboard-light-blue border-b-clipboard-light-blue shadow-clipboard-light-blue">
+            </Button>
+            <Button className="bg-clipboard-light-blue border-b-clipboard-light-blue shadow-clipboard-light-blue">
               Download for Mac
-            </DownloadCard.Button>
+            </Button>
           </div>
         </DownloadCard>
         <section className="mt-20">
@@ -126,22 +127,22 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
             adding to your clipboard.
           </p>
           <div className="space-x-3">
-            <DownloadCard.Button className="bg-clipboard-cyan border-b-clipboard-cyan shadow-clipboard-cyan">
+            <Button className="bg-clipboard-cyan border-b-clipboard-cyan shadow-clipboard-cyan">
               Download for iOS
-            </DownloadCard.Button>
-            <DownloadCard.Button className="bg-clipboard-light-blue border-b-clipboard-light-blue shadow-clipboard-light-blue">
+            </Button>
+            <Button className="bg-clipboard-light-blue border-b-clipboard-light-blue shadow-clipboard-light-blue">
               Download for Mac
-            </DownloadCard.Button>
+            </Button>
           </div>
         </section>
       </main>
       <Footer>
         <div className="flex max-w-screen-md mx-auto justify-between h-1/5">
-          <div className="">
+          <div>
             <img src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" className="w-auto h-16" />
           </div>
           <div className="flex">
-            <ul className="grid grid-cols-3 text-clipboard-dark-grayish-blue">
+            <ul className="grid grid-cols-3 text-clipboard-dark-grayish-blue opacity-70">
               <li className="">
                 <a href="#">FAQs</a>
               </li>
