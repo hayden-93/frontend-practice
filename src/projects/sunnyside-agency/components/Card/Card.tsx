@@ -5,7 +5,7 @@ interface CardProps {
 }
 
 export const Card = ({ children, className, ...props }: PropsWithChildren<CardProps>) => {
-  const classes = ["max-w-screen-desktop mx-auto h-screen", className].join(" ").trim();
+  const classes = ["text-center space-y-12", className].join(" ").trim();
 
   return (
     <div className={classes} {...props}>
@@ -14,32 +14,16 @@ export const Card = ({ children, className, ...props }: PropsWithChildren<CardPr
   );
 };
 
-interface CardAvatarProps {
-  className?: string;
-  src: string;
-  alt: string;
-}
-
-const CardAvatar = ({ alt, className, src }: PropsWithChildren<CardAvatarProps>) => {
-  const classes = ["", className].join(" ").trim();
-
-  return (
-    <>
-      <img className={classes} src={src} alt={alt} />
-    </>
-  );
-};
-
 interface CardDescriptionProps {
   className?: string;
 }
 
 const CardDescription = ({ children, className }: PropsWithChildren<CardDescriptionProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["px-16 text-sunny-very-dark-grayish-blue text-lg font-bold opacity-80", className].join(" ").trim();
 
   return (
     <>
-      <p>{children}</p>
+      <p className={classes}>{children}</p>
     </>
   );
 };
@@ -49,11 +33,11 @@ interface CardAuthorProps {
 }
 
 const CardAuthor = ({ children, className }: PropsWithChildren<CardAuthorProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["text-xl font-black", className].join(" ").trim();
 
   return (
     <>
-      <p>{children}</p>
+      <p className={classes}>{children}</p>
     </>
   );
 };
@@ -62,16 +46,15 @@ interface CardJobTitleProps {
 }
 
 const CardJobTitle = ({ children, className }: PropsWithChildren<CardJobTitleProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["text-sm text-sunny-grayish-blue font-bold py-2", className].join(" ").trim();
 
   return (
     <>
-      <p>{children}</p>
+      <p className={classes}>{children}</p>
     </>
   );
 };
 
-Card.Avatar = CardAvatar;
 Card.Description = CardDescription;
 Card.Author = CardAuthor;
 Card.JobTitle = CardJobTitle;
