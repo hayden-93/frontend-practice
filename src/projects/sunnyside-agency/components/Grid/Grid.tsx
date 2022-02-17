@@ -5,7 +5,7 @@ interface GridProps {
 }
 
 export const Grid = ({ children, className, ...props }: PropsWithChildren<GridProps>) => {
-  const classes = ["flex max-w-screen-desktop", className].join(" ").trim();
+  const classes = ["grid grid-cols-4 mt-44", className].join(" ").trim();
 
   return (
     <section className={classes} {...props}>
