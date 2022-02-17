@@ -61,6 +61,7 @@ module.exports = {
         "sunny-dark-grayish-blue": "hsl(232, 10%, 55%)",
         "sunny-grayish-blue": "hsl(210, 4%, 67%)",
         "sunnyside-blue": "hsl(200, 100%, 62%)",
+        "sunnyside-footer": "hsl(167, 44%, 70%)",
       },
       fontSize: {
         xxs: "10px",
