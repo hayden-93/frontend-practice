@@ -11,28 +11,23 @@ export const Header = ({ className }: HeaderProps) => {
         <div className="flex items-center justify-between max-w-screen-desktop mx-auto px-2 space-x-4">
           <img src="/sunnyside-agency/logo.svg" alt="Sunnyside Agency Logo" className="block relative w-auto h-8" />
           <nav className="flex items-center space-x-12">
-            <a href="#" className="block text-white">
+            <a href="#" className="block text-white font-barlow">
               About
             </a>
-            <a href="#" className="block text-white">
+            <a href="#" className="block text-white font-barlow">
               Services
             </a>
-            <a href="#" className="block text-white">
+            <a href="#" className="block text-white font-barlow">
               Projects
             </a>
-            <a href="#" className="rounded-full bg-white py-3 px-6 font-medium uppercase hover:opacity-40">
+            <a
+              href="#"
+              className="rounded-full bg-white py-4 px-6 font-medium font-fraunces uppercase hover:opacity-40"
+            >
               Contact
             </a>
           </nav>
         </div>
-        {/* <div className="max-w-screen-sm mx-auto">
-          <h1 className="absolute text-white text-6xl font-extrabold tracking-widest uppercase top-60 ml-12">
-            We Are Creatives
-          </h1>
-        </div> */}
-        {/* <div className="relative max-w-screen-xxs mx-auto left-56 place-items-center">
-          <img src="/sunnyside-agency/icon-arrow-down.svg" alt="Down Arrow Icon" className="absolute top-96" />
-        </div> */}
       </header>
     </>
   );

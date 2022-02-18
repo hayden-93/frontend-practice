@@ -29,6 +29,8 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Outfit", "sans-serif"],
+      barlow: ["Barlow", "sans-serif"],
+      fraunces: ["Fraunces", "sans-serif"],
     },
     extend: {
       backgroundImage: {

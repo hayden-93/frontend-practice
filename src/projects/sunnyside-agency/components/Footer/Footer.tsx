@@ -5,7 +5,7 @@ interface FooterProps {
 }
 
 export const Footer = ({ children, className }: PropsWithChildren<FooterProps>) => {
-  const classes = ["py-20 bg-sunnyside-footer", className].join(" ").trim();
+  const classes = ["py-24 bg-sunnyside-footer", className].join(" ").trim();
 
   return (
     <footer className={classes}>

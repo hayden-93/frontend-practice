@@ -15,7 +15,10 @@ interface HeroTitleProps {
 }
 
 const HeroTitle = ({ children, className }: PropsWithChildren<HeroTitleProps>) => {
-  const classes = ["max-w-screen-sm mx-auto pt-48 text-center text-white text-6xl uppercase", className]
+  const classes = [
+    "max-w-screen-md mx-auto pt-48 text-center font-fraunces text-white text-6xl tracking-widest uppercase",
+    className,
+  ]
     .join(" ")
     .trim();
 
@@ -25,7 +28,7 @@ interface HeroArrowProps {
   className?: string;
 }
 
-const HeroArrow = ({ children, className }: PropsWithChildren<HeroArrowProps>) => {
+const HeroArrow = ({ className }: HeroArrowProps) => {
   const classes = ["max-w-screen-xxs mx-auto mt-24 text-center text-white", className].join(" ").trim();
 
   return (

@@ -5,7 +5,7 @@ interface CardProps {
 }
 
 export const Card = ({ children, className, ...props }: PropsWithChildren<CardProps>) => {
-  const classes = ["text-center space-y-12", className].join(" ").trim();
+  const classes = ["text-center font-barlow space-y-12", className].join(" ").trim();
 
   return (
     <div className={classes} {...props}>
@@ -33,7 +33,7 @@ interface CardAuthorProps {
 }
 
 const CardAuthor = ({ children, className }: PropsWithChildren<CardAuthorProps>) => {
-  const classes = ["text-xl font-black", className].join(" ").trim();
+  const classes = ["text-xl font-black font-fraunces", className].join(" ").trim();
 
   return (
     <>
@@ -46,7 +46,7 @@ interface CardJobTitleProps {
 }
 
 const CardJobTitle = ({ children, className }: PropsWithChildren<CardJobTitleProps>) => {
-  const classes = ["text-sm text-sunny-grayish-blue font-bold py-2", className].join(" ").trim();
+  const classes = ["text-sm text-sunny-grayish-blue font-bold font-barlow py-2", className].join(" ").trim();
 
   return (
     <>

@@ -10,12 +10,14 @@ export function SunnysideAgency() {
       </Hero>
       <section className="grid grid-cols-2 text-left">
         <div className="max-w-screen-sm mx-auto self-center space-y-4">
-          <h3 className="text-4xl font-black w-80">Transform your brand</h3>
+          <h3 className="text-4xl font-black w-80 font-fraunces">Transform your brand</h3>
           <p className="text-sunny-dark-grayish-blue text-base font-extrabold w-96">
             We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
             compelling visuals that do most of the marketing for you.
           </p>
-          <button className="py-4 uppercase font-black underline decoration-yellow decoration-4">Learn More</button>
+          <button className="py-4 uppercase font-black font-fraunces underline decoration-yellow decoration-4">
+            Learn More
+          </button>
         </div>
         <div className="">
           <img src="/sunnyside-agency/image-transform.jpg" alt="Egg Image" />
@@ -24,32 +26,34 @@ export function SunnysideAgency() {
           <img src="/sunnyside-agency/image-stand-out.jpg" alt="Pink Cup Image" />
         </div>
         <div className="max-w-screen-sm mx-auto self-center space-y-6">
-          <h3 className="text-4xl font-black w-80">Stand out to the right audience</h3>
+          <h3 className="text-4xl font-black font-fraunces w-80">Stand out to the right audience</h3>
           <p className="text-sunny-dark-grayish-blue text-base font-extrabold w-96">
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
             we'll build and extend your brand in digital places.
           </p>
-          <button className="py-4 uppercase font-black underline decoration-yellow decoration-4">Learn More</button>
+          <button className="py-4 uppercase font-black font-fraunces underline decoration-soft-red decoration-4">
+            Learn More
+          </button>
         </div>
         <div className="text-center space-y-3">
-          <img src="/sunnyside-agency/image-graphic-design.jpg" alt="Cherry Image" className="" />
-          <h3 className="relative">Graphic Design</h3>
-          <p className="relative max-w-screen-xxs mx-auto">
+          <img src="/sunnyside-agency/image-graphic-design.jpg" alt="Cherry Image" className="relative" />
+          <h3 className="font-fraunces text-2xl text-desat-cyan">Graphic Design</h3>
+          <p className="max-w-screen-xxs mx-auto font-barlow text-desat-cyan">
             Great design makes you memorable. We deliver artwork that underscores your brand message and captures
             potential clients' attention.
           </p>
         </div>
-        <div className="text-center">
+        <div className="text-center space-y-3">
           <img src="/sunnyside-agency/image-photography.jpg" alt="Orange Image" className="" />
-          <h3 className="relative">Photography</h3>
-          <p className="relative">
+          <h3 className="font-fraunces text-2xl text-desat-cyan">Photography</h3>
+          <p className="max-w-screen-xxs mx-auto font-barlow text-desat-cyan">
             Increase your credibility by getting the most stunning, high-quality photos that improve your business
             image.
           </p>
         </div>
       </section>
       <Testimonials className="mt-20">
-        <h1 className="text-center text-2xl text-sunny-grayish-blue font-black tracking-widest uppercase">
+        <h1 className="text-center text-2xl font-fraunces text-sunny-grayish-blue font-black tracking-widest uppercase">
           Client Testimonials
         </h1>
         <div className="flex mt-10">
