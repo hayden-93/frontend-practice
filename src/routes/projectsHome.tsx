@@ -19,6 +19,12 @@ const projects = [
     description: "",
     href: "/testimonials-grid",
   },
+  {
+    id: "sunnyside-agency",
+    title: "Sunnyside Agency",
+    description: "",
+    href: "/sunnyside-agency",
+  },
 ];
 
 export function ProjectsHome() {

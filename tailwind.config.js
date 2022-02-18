@@ -29,21 +29,16 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Outfit", "sans-serif"],
-    },
-    extend: {
-      backgroundImage: {
-        quotation: "url(/testimonials-grid/quotation.svg)",
-      },
-      minWidth: {
-        8: "32px",
-      },
-      fontSize: {
-        xxs: "10px",
-      },
+      barlow: ["Barlow", "sans-serif"],
+      fraunces: ["Fraunces", "sans-serif"],
     },
     extend: {
       backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
+        quotation: "url('/testimonials-grid/quotation.svg')",
+        sunnyside: "url('/sunnyside-agency/image-header.jpg')",
+        "sunnyside-cherry": "url('/sunnyside-agency/image-graphic-design.jpg')",
+        "sunnyside-orange": "url('/sunnyside-agency/image-photography.jpg')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
@@ -58,11 +53,37 @@ module.exports = {
         "neutral-white": "hsl(0, 0%, 100%)",
         "neutral-white-main": "hsla(0, 0%, 100%, 0.75)",
         "neutral-white-stat": "hsl(0, 0%, 100%, 0.6)",
+        "soft-red": "hsl(7, 99%, 70%)",
+        yellow: "hsl(51, 100%, 49%)",
+        "desat-cyan": "hsl(167, 40%, 24%)",
+        "ver-dark-desat-cyan": "hsl(212, 27%, 19%)",
+        "dark-blue": "hsl(198, 62%, 26%)",
+        "moderate-cyan": "hsl(168, 34%, 41%)",
+        "sunny-very-dark-grayish-blue": "hsl(213, 9%, 39%)",
+        "sunny-dark-grayish-blue": "hsl(232, 10%, 55%)",
+        "sunny-grayish-blue": "hsl(210, 4%, 67%)",
+        "sunnyside-blue": "hsl(200, 100%, 62%)",
+        "sunnyside-footer": "hsl(167, 44%, 70%)",
+      },
+      fontSize: {
+        xxs: "10px",
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
       },
+      spacing: {
+        "vh-1": "10vh",
+        "vh-2": "20vh",
+        "vh-3": "30vh",
+        "vh-4": "40vh",
+        "vh-5": "50vh",
+        "vh-6": "60vh",
+        "vh-7": "70vh",
+        "vh-8": "80vh",
+        "vh-9": "90vh",
+      },
       minWidth: {
+        8: "32px",
         "1/2": "50%",
       },
       screens: {
