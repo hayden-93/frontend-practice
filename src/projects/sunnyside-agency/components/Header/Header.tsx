@@ -22,7 +22,7 @@ export const Header = ({ className }: HeaderProps) => {
             </a>
             <a
               href="#"
-              className="rounded-full bg-white py-4 px-6 font-medium font-fraunces uppercase hover:opacity-40"
+              className="rounded-full bg-white py-4 px-6 font-medium font-fraunces uppercase hover:text-white hover:opacity-40"
             >
               Contact
             </a>

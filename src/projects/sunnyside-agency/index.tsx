@@ -9,9 +9,9 @@ export function SunnysideAgency() {
         <Hero.Arrow />
       </Hero>
       <section className="grid grid-cols-2 text-left">
-        <div className="max-w-screen-sm mx-auto self-center space-y-4">
+        <div className="max-w-screen-sm mx-auto self-center space-y-6">
           <h3 className="text-4xl font-black w-80 font-fraunces">Transform your brand</h3>
-          <p className="text-sunny-dark-grayish-blue text-base font-extrabold w-96">
+          <p className="text-sunny-dark-grayish-blue text-sm font-extrabold w-96">
             We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
             compelling visuals that do most of the marketing for you.
           </p>
@@ -56,7 +56,7 @@ export function SunnysideAgency() {
         <h1 className="text-center text-2xl font-fraunces text-sunny-grayish-blue font-black tracking-widest uppercase">
           Client Testimonials
         </h1>
-        <div className="flex mt-10">
+        <div className="flex mt-20">
           <Card className="items-center">
             <Avatar src="/sunnyside-agency/image-emily.jpg" alt="Emily" className="" />
             <Card.Description>

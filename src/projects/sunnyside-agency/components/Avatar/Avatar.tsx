@@ -5,7 +5,7 @@ interface AvatarProps {
 }
 
 export const Avatar = ({ alt, className, src }: AvatarProps) => {
-  const classes = ["rounded-full w-16 h-auto mx-auto", className].join(" ").trim();
+  const classes = ["rounded-full w-20 h-auto mx-auto", className].join(" ").trim();
 
   return (
     <div className="">

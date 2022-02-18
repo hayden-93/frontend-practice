@@ -27,7 +27,7 @@ interface FooterNavLinksProps {
 }
 
 const FooterNavLinks = ({ children, className }: PropsWithChildren<FooterNavLinksProps>) => {
-  const classes = ["flex justify-center max-w-screen-xxs mx-auto py-6", className].join(" ").trim();
+  const classes = ["flex justify-center max-w-screen-xxs mx-auto py-10", className].join(" ").trim();
 
   return (
     <div className={classes}>
