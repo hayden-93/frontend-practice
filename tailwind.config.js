@@ -59,6 +59,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
+        "Bai-Jamjuree": ["Bai Jamjuree", "sans-serif"],
       },
       minWidth: {
         8: "32px",
