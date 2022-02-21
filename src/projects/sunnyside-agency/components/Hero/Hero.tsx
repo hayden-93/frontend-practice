@@ -16,7 +16,7 @@ interface HeroTitleProps {
 
 const HeroTitle = ({ children, className }: PropsWithChildren<HeroTitleProps>) => {
   const classes = [
-    "max-w-screen-md mx-auto pt-48 text-center font-fraunces text-white text-6xl tracking-widest uppercase",
+    "max-w-screen-md mx-auto pt-20 text-center font-fraunces text-white text-6xl tracking-widest uppercase",
     className,
   ]
     .join(" ")
@@ -29,7 +29,7 @@ interface HeroArrowProps {
 }
 
 const HeroArrow = ({ className }: HeroArrowProps) => {
-  const classes = ["max-w-screen-xxs mx-auto mt-24 text-center text-white", className].join(" ").trim();
+  const classes = ["max-w-screen-xxs mx-auto mt-20 text-center text-white", className].join(" ").trim();
 
   return (
     <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg" className={classes}>

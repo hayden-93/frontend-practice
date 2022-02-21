@@ -3,8 +3,8 @@ import { Avatar, Card, Footer, Grid, Header, Hero, Testimonials } from "./compon
 export function SunnysideAgency() {
   return (
     <div>
-      <Header />
       <Hero>
+        <Header />
         <Hero.Title>We Are Creatives</Hero.Title>
         <Hero.Arrow />
       </Hero>
