@@ -18,6 +18,10 @@ module.exports = {
       "neutral-4": "hsl(217, 19%, 35%)",
       "neutral-5": "hsl(219, 29%, 14%)",
       violet: "hsl(263, 55%, 52%)",
+      "clipboard-cyan": "hsl(171, 66%, 44%)",
+      "clipboard-light-blue": "hsl(233, 100%, 69%)",
+      "clipboard-dark-grayish-blue": "hsl(210, 10%, 33%)",
+      "clipboard-grayish-blue": "hsl(201, 11%, 66%)",
     },
     screens: {
       xxs: "480px",
@@ -31,19 +35,13 @@ module.exports = {
       sans: ["Outfit", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        quotation: "url(/testimonials-grid/quotation.svg)",
-      },
-      minWidth: {
-        8: "32px",
-      },
       fontSize: {
         xxs: "10px",
       },
-    },
-    extend: {
       backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
+        quotation: "url(/testimonials-grid/quotation.svg)",
+        "header-image": "url('/clipboard-landing-page/bg-header-desktop.png')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
@@ -61,8 +59,10 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
+        "Bai-Jamjuree": ["Bai Jamjuree", "sans-serif"],
       },
       minWidth: {
+        8: "32px",
         "1/2": "50%",
       },
       screens: {

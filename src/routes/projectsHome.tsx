@@ -19,6 +19,12 @@ const projects = [
     description: "",
     href: "/testimonials-grid",
   },
+  {
+    id: "clipboard-landing-page",
+    title: "Clipboard Landing Page",
+    description: "",
+    href: "/clipboard-landing-page",
+  },
 ];
 
 export function ProjectsHome() {
