@@ -13,16 +13,3 @@ export const Header = ({ children, className, ...props }: PropsWithChildren<Head
     </header>
   );
 };
-
-interface HeaderLogoProps {
-  className?: string;
-  src: string;
-  alt: string;
-}
-
-const HeaderLogo = ({ className, ...props }: HeaderLogoProps) => {
-  const classes = ["", className].join(" ").trim();
-  return <img className={classes} {...props} />;
-};
-
-Header.Logo = HeaderLogo;

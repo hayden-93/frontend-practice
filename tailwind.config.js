@@ -41,7 +41,7 @@ module.exports = {
       backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
         quotation: "url(/testimonials-grid/quotation.svg)",
-        "header-image": "url('/clipboard-landing-page/logo.svg')",
+        "header-image": "url('/clipboard-landing-page/bg-header-desktop.png')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",

@@ -5,7 +5,7 @@ interface HeadingProps {
 }
 
 export const Heading = ({ children, className }: PropsWithChildren<HeadingProps>) => {
-  const classes = ["text-4xl font-semibold text-clipboard-dark-grayish-blue", className].join(" ").trim();
+  const classes = ["font-semibold text-clipboard-dark-grayish-blue", className].join(" ").trim();
   return <h2 className={classes}>{children}</h2>;
 };
 
