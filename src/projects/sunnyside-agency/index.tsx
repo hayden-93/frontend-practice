@@ -35,24 +35,32 @@ export function SunnysideAgency() {
             Learn More
           </button>
         </div>
-        <div className="text-center space-y-3">
-          <img src="/sunnyside-agency/image-graphic-design.jpg" alt="Cherry Image" className="relative" />
-          <h3 className="font-fraunces text-2xl text-desat-cyan">Graphic Design</h3>
-          <p className="max-w-screen-xxs mx-auto font-barlow text-desat-cyan">
-            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-            potential clients' attention.
-          </p>
+        <div className="relative">
+          <div className="absolute">
+            <img src="/sunnyside-agency/image-graphic-design.jpg" alt="Cherry Image" className="object-cover" />
+          </div>
+          <div className="relative max-w-screen-md mx-auto text-center py-24 top-72 w-1/2">
+            <h3 className="text-center font-fraunces text-2xl text-desat-cyan">Graphic Design</h3>
+            <p className="max-w-screen-xxs mx-auto mt-6 font-barlow text-desat-cyan">
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              potential clients' attention.
+            </p>
+          </div>
         </div>
-        <div className="text-center space-y-3">
-          <img src="/sunnyside-agency/image-photography.jpg" alt="Orange Image" className="" />
-          <h3 className="font-fraunces text-2xl text-desat-cyan">Photography</h3>
-          <p className="max-w-screen-xxs mx-auto font-barlow text-desat-cyan">
-            Increase your credibility by getting the most stunning, high-quality photos that improve your business
-            image.
-          </p>
+        <div className="relative">
+          <div className="absolute">
+            <img src="/sunnyside-agency/image-photography.jpg" alt="Orange Image" className="object-cover" />
+          </div>
+          <div className="relative max-w-screen-md mx-auto text-center py-24 top-72 w-1/2">
+            <h3 className="text-center font-fraunces text-2xl text-desat-cyan">Photography</h3>
+            <p className="max-w-screen-xxs mx-auto mt-6 font-barlow text-desat-cyan">
+              Increase your creditbility by getting themost stunning, high-quality photos that improve your business
+              image.
+            </p>
+          </div>
         </div>
       </section>
-      <Testimonials className="mt-20">
+      <Testimonials className="mt-96 py-20">
         <h1 className="text-center text-2xl font-fraunces text-sunny-grayish-blue font-black tracking-widest uppercase">
           Client Testimonials
         </h1>
