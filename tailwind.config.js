@@ -43,6 +43,9 @@ module.exports = {
         quotation: "url(/testimonials-grid/quotation.svg)",
         "header-image": "url('/clipboard-landing-page/bg-header-desktop.png')",
       },
+      boxShadow: {
+        "inner-lg": "inset 0 20px 40px 0 rgb(0 0 0 / 0.05)",
+      },
       colors: {
         "primary-soft-blue": "#8bacda",
         "primary-cyan": "#00fff7",

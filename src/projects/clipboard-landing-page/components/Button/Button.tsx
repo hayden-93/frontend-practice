@@ -5,7 +5,7 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, className }: PropsWithChildren<ButtonProps>) => {
-  const classes = ["text-white py-3 px-8 font-medium rounded-full shadow border-b", className].join(" ").trim();
+  const classes = ["text-lg text-white py-3 px-10 font-medium rounded-full shadow-md", className].join(" ").trim();
 
   return (
     <>
