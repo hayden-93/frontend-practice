@@ -155,20 +155,15 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
         </div>
       </section>
       <Footer>
-        <div className="flex max-w-screen-md mx-auto justify-between h-1/5">
+        <div className="flex max-w-screen-md mx-auto justify-between space-x-36 h-1/5">
           <div>
             <img src="/clipboard-landing-page/logo.svg" alt="Clipboard Logo" className="w-auto h-14" />
           </div>
-          <div className="flex">
-            <ul className="grid grid-cols-3 text-clipboard-dark-grayish-blue font-semibold opacity-70">
-              <li>
+          <div className="grow">
+            <ul className="grid grid-cols-3 gap-4 text-clipboard-dark-grayish-blue font-medium text-lg opacity-70">
+              <li className="">
                 <a href="#" className="hover:opacity-70">
                   FAQs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:opacity-70">
-                  Contact Us
                 </a>
               </li>
               <li>
@@ -178,12 +173,17 @@ export function ClipboardLandingPage({ className }: ClipboardLandingPageProps) {
               </li>
               <li>
                 <a href="#" className="hover:opacity-70">
-                  Press Kit
+                  Install Guide
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:opacity-70">
-                  Install Guide
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:opacity-70">
+                  Press Kit
                 </a>
               </li>
             </ul>
