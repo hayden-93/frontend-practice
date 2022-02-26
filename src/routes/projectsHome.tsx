@@ -19,6 +19,12 @@ const projects = [
     description: "",
     href: "/testimonials-grid",
   },
+  {
+    id: "order-summary-card-component",
+    title: "Order Summary Card Component",
+    description: "",
+    href: "/order-summary-card-component",
+  },
 ];
 
 export function ProjectsHome() {

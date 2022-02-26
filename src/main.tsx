@@ -24,6 +24,7 @@ ReactDOM.render(
             <Route path="nft-preview-card" element={<NFTPreviewCard />} />
             <Route path="testimonials-grid" element={<TestimonialsGrid />} />
             <Route path="stats-card" element={<StatsCard />} />
+            <Route path="order-summary-card-component" element={""} />
 
             <Route index element={<ProjectsHome />} />
           </Route>
