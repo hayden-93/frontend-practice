@@ -44,6 +44,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
+        "order-summary-desktop": "url('/order-summary-card-component/pattern-background-desktop.svg')",
+        "order-summary-mobile": "url('/order-summary-card-component/pattern-background-mobile.svg')",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
@@ -58,9 +60,15 @@ module.exports = {
         "neutral-white": "hsl(0, 0%, 100%)",
         "neutral-white-main": "hsla(0, 0%, 100%, 0.75)",
         "neutral-white-stat": "hsl(0, 0%, 100%, 0.6)",
+        "pale-blue": "hsl(225, 100%, 94%)",
+        "bright-blue": "hsl(245, 75%, 52%)",
+        "very-pale-blue": "hsl(225, 100%, 98%)",
+        "order-desat-blue": "hsl(224, 23%, 55%)",
+        "order-dark-blue": "hsl(223, 47%, 23%)",
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
+        "Red-Hat": ["Red-Hat-Display"],
       },
       minWidth: {
         "1/2": "50%",
