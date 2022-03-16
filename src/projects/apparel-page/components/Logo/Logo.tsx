@@ -5,5 +5,5 @@ interface LogoProps {
 export const Logo = ({ className }: LogoProps) => {
   const classes = ["", className].join(" ").trim();
 
-  return <img src="" alt="" className={classes} />;
+  return <img src="/apparel-page/logo.svg" alt="Base Apparel Logo" className={classes} />;
 };
