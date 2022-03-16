@@ -19,6 +19,12 @@ const projects = [
     description: "",
     href: "/testimonials-grid",
   },
+  {
+    id: "apparel-page",
+    title: "Apparel Page",
+    description: "",
+    href: "/apparel-page",
+  },
 ];
 
 export function ProjectsHome() {
