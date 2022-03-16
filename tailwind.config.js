@@ -58,9 +58,17 @@ module.exports = {
         "neutral-white": "hsl(0, 0%, 100%)",
         "neutral-white-main": "hsla(0, 0%, 100%, 0.75)",
         "neutral-white-stat": "hsl(0, 0%, 100%, 0.6)",
+        "apparel-desat-red": "hsl(0, 36%, 70%)",
+        "apparel-soft-red": "hsl(0, 93%, 68%)",
+        "apparel-dark-grayish-red": "hsl(0, 6%, 24%)",
+        "apparel-linear-1/2": "hsl(0, 0%, 100%)",
+        "apparel-linear-2/2": "hsl(0, 100%, 98%)",
+        "apparel-linear-a": "hsl(0, 80%, 86%)",
+        "apparel-linear-b": "hsl(0, 74%, 74%)",
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],
+        "Josefin-Sans": ["Josefin Sans"],
       },
       minWidth: {
         "1/2": "50%",
