@@ -5,12 +5,12 @@ interface CardProps {
 }
 
 export const Card = ({ children, className }: PropsWithChildren<CardProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["max-w-screen-mobile mx-auto bg-white", className].join(" ").trim();
 
   return (
-    <>
+    <section className={classes}>
       <>{children}</>
-    </>
+    </section>
   );
 };
 
@@ -21,7 +21,7 @@ interface CardImage {
 }
 
 const CardImage = ({ alt, className, src }: CardImage) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["rounded-2xl", className].join(" ").trim();
 
   return <img src={src} alt={alt} className={classes} />;
 };
@@ -30,10 +30,10 @@ interface CardTitle {
   className?: string;
 }
 
-const CardTitle = ({ className }: CardTitle) => {
+const CardTitle = ({ children, className }: PropsWithChildren<CardTitle>) => {
   const classes = ["", className].join(" ").trim();
 
-  return <h3 className={classes} />;
+  return <h3 className={classes}>{children}</h3>;
 };
 
 interface CardDescription {
@@ -45,3 +45,7 @@ const CardDescription = ({ children, className }: PropsWithChildren<CardDescript
 
   return <p className={classes}>{children}</p>;
 };
+
+Card.Image = CardImage;
+Card.Title = CardTitle;
+Card.Description = CardDescription;

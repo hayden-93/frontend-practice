@@ -4,12 +4,8 @@ interface ButtonProps {
   className?: string;
 }
 
-export const Button = ({ className }: PropsWithChildren<ButtonProps>) => {
+export const Button = ({ children, className }: PropsWithChildren<ButtonProps>) => {
   const classes = ["", className].join(" ").trim();
 
-  return (
-    <>
-      <></>
-    </>
-  );
+  return <button className={classes}>{children}</button>;
 };
