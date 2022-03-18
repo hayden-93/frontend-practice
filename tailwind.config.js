@@ -45,6 +45,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "cover-image": "url(/stats-card/image-header-desktop.jpg)",
+        "apparel-image": "url(/apparel-page/hero-desktop.jpg)",
       },
       colors: {
         "primary-soft-blue": "#8bacda",
