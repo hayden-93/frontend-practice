@@ -18,6 +18,10 @@ module.exports = {
       "neutral-4": "hsl(217, 19%, 35%)",
       "neutral-5": "hsl(219, 29%, 14%)",
       violet: "hsl(263, 55%, 52%)",
+      "article-dark-grayish-blue": "hsl(217, 19%, 35%)",
+      "article-desat-dark-blue": "hsl(214, 17%, 51%)",
+      "article-grayish-blue": "hsl(212, 23%, 69%)",
+      "article-light-grayish-blue": "hsl(210, 46%, 95%)",
     },
     screens: {
       xxs: "480px",
@@ -29,6 +33,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Outfit", "sans-serif"],
+      Manrope: ["Manrope"],
     },
     extend: {
       backgroundImage: {
@@ -39,6 +44,7 @@ module.exports = {
       },
       fontSize: {
         xxs: "10px",
+        "article-font": "13px",
       },
     },
     extend: {
