@@ -2,7 +2,7 @@ import { Avatar, Card, UserProfile } from "./components";
 
 export function ArticlePreview() {
   return (
-    <section className="bg-article-light-grayish-blue ">
+    <section className="bg-article-light-grayish-blue py-10">
       <Card>
         <Card.Image src="/article-preview/drawers.jpg" alt="Image of Drawers" />
         <section className="space-y-2">
@@ -14,18 +14,22 @@ export function ArticlePreview() {
             got some simple tips to help you make any room feel complete.
           </Card.Description>
         </section>
-        <UserProfile className="flex space-x-6">
+        <UserProfile className="flex space-x-6 py-5 hover:bg-article-dark-grayish-blue">
           <Avatar src="/article-preview/avatar-michelle.jpg" alt="Image of Michelle" />
           <div>
             <UserProfile.Name>Michelle Appleton</UserProfile.Name>
-            <span className="">28 Jun 2020</span>
+            <span className="text-article-desat-dark-blue">28 Jun 2020</span>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" className="border">
-            <path
-              fill="#6E8098"
-              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
-            />
-          </svg>
+          <div className="items-center py-4">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" className="ml-10">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+          </div>
         </UserProfile>
       </Card>
     </section>

@@ -5,7 +5,7 @@ interface UserProfileProps {
 }
 
 export const UserProfile = ({ children, className }: PropsWithChildren<UserProfileProps>) => {
-  const classes = ["px-8", className].join(" ").trim();
+  const classes = ["px-8 text-sm items-center", className].join(" ").trim();
 
   return <section className={classes}>{children}</section>;
 };
@@ -15,9 +15,9 @@ interface UserProfileNameProps {
 }
 
 export const UserProfileName = ({ children, className }: PropsWithChildren<UserProfileNameProps>) => {
-  const classes = ["", className].join(" ").trim();
+  const classes = ["text-article-dark-grayish-blue font-semibold", className].join(" ").trim();
 
-  return <section>{children}</section>;
+  return <p className={classes}>{children}</p>;
 };
 interface UserProfileProps {
   className?: string;

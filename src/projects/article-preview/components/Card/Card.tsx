@@ -5,7 +5,9 @@ interface CardProps {
 }
 
 export const Card = ({ children, className }: PropsWithChildren<CardProps>) => {
-  const classes = ["max-w-screen-mobile mx-auto py-16 space-y-8 rounded-xl bg-white", className].join(" ").trim();
+  const classes = ["max-w-screen-mobile mx-auto space-y-8 rounded-xl overflow-hidden bg-white", className]
+    .join(" ")
+    .trim();
 
   return <section className={classes}>{children}</section>;
 };
@@ -17,7 +19,7 @@ interface CardImageProps {
 }
 
 const CardImage = ({ alt, className, src }: CardImageProps) => {
-  const classes = ["overflow-hidden", className].join(" ").trim();
+  const classes = ["", className].join(" ").trim();
 
   return <img src={src} alt={alt} className={classes} />;
 };
