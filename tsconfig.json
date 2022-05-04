@@ -4,7 +4,8 @@
     "paths": {
       "@nft/*": ["src/projects/nft-preview-card/*"],
       "@testimonials/*": ["src/projects/testimonials-grid/*"],
-      "@stats-card/*": ["src/projects/stats-card/*"]
+      "@stats-card/*": ["src/projects/stats-card/*"],
+      "@social-proof/*": ["src/projects/social-proof/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
