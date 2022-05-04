@@ -11,6 +11,7 @@ export default defineConfig({
       "@nft": path.join(process.cwd(), "src", "projects", "nft-preview-card"),
       "@testimonials-grid": path.join(process.cwd(), "src", "projects", "testimonials-grid"),
       "@stats-card": path.join(process.cwd(), "src", "projects", "stats-card"),
+      "@social-proof": path.join(process.cwd(), "src", "projects", "social-proof"),
     },
   },
 });
